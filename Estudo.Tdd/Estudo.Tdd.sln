@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{47D3696F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estudo.Tdd.Calculadora.MSTest", "Estudo.Tdd.Calculadora.MSTest\Estudo.Tdd.Calculadora.MSTest.csproj", "{C8EF59C7-A4AC-48A8-A948-9DC992382F5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estudo.Tdd.Calculadora.NUnit", "Estudo.Tdd.Calculadora.NUnit\Estudo.Tdd.Calculadora.NUnit.csproj", "{06CC1E75-09B1-453E-AA3F-BCBC8BD58ED4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +25,17 @@ Global
 		{C8EF59C7-A4AC-48A8-A948-9DC992382F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8EF59C7-A4AC-48A8-A948-9DC992382F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8EF59C7-A4AC-48A8-A948-9DC992382F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06CC1E75-09B1-453E-AA3F-BCBC8BD58ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06CC1E75-09B1-453E-AA3F-BCBC8BD58ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06CC1E75-09B1-453E-AA3F-BCBC8BD58ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06CC1E75-09B1-453E-AA3F-BCBC8BD58ED4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C8EF59C7-A4AC-48A8-A948-9DC992382F5B} = {47D3696F-0002-4B8D-9DA8-B3F2E70FD70E}
+		{06CC1E75-09B1-453E-AA3F-BCBC8BD58ED4} = {47D3696F-0002-4B8D-9DA8-B3F2E70FD70E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D72BB175-F3ED-4C54-A097-2C4231D42A65}
