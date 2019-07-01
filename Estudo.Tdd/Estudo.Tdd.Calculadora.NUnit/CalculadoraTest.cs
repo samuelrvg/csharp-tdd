@@ -6,7 +6,7 @@ namespace Estudo.Tdd.Calculadora.NUnit
     [TestFixture]
     class CalculadoraTest
     {
-        private Calculadora _calc;
+        //private Calculadora _calc;
 
         [Test]
         public void TestSomar()
@@ -17,6 +17,7 @@ namespace Estudo.Tdd.Calculadora.NUnit
         }
 
         [Test]
+        [Ignore("ignorar test")]
         public void TestSubtrair()
         {
             Calculadora calc = new Calculadora();
