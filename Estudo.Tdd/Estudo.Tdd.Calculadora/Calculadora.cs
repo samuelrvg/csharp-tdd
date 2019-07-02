@@ -15,7 +15,7 @@ namespace Estudo.Tdd.Calculadora
         {
             if((a < _limiteMinimo) || (b < _limiteMinimo))
             {
-                throw new ArgumentOutOfRangeException();
+                throw new ArgumentOutOfRangeException("O argumanto está abaixo do limite minimo");
             }
 
             return a + b;
@@ -25,19 +25,30 @@ namespace Estudo.Tdd.Calculadora
         {
             if ((a < _limiteMinimo) || (b < _limiteMinimo))
             {
-                throw new ArgumentOutOfRangeException();
+                throw new ArgumentOutOfRangeException("O argumanto está abaixo do limite minimo");
             }
             return a - b;
         }
 
         public int Multiplicar(int a, int b)
         {
-            throw new ArgumentException();
+            if ((a < _limiteMinimo) || (b < _limiteMinimo))
+            {
+                throw new ArgumentOutOfRangeException("O argumanto está abaixo do limite minimo");
+            }
+
+            return a * b;
         }
 
         public int Dividir(int a, int b)
         {
-            throw new ArgumentException();
+            if (b <= 0)
+            {
+                throw new DivideByZeroException("Divisão por zero não permitida");
+            }
+
+            return a / b;
+            //throw new ArgumentOutOfRangeException("O argumanto está abaixo do limite minimo");
         }
     }
 }

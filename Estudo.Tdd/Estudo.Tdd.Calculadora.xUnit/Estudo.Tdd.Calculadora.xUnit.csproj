@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalculadoraTest.cs" />
+    <Compile Include="DivisaoTest.cs" />
+    <Compile Include="MultiplicacaoTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
