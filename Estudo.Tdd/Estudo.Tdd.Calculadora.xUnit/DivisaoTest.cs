@@ -1,15 +1,22 @@
-﻿using System;
+﻿using Moq;
+using System;
 using Xunit;
 
 namespace Estudo.Tdd.Calculadora.xUnit
 {
     public class DivisaoTest : IDisposable
     {
-        private Calculadora _calc;
+        private ICalculadora _calc;
+        private Mock<ICalculadora> _mockCalc;
 
         public DivisaoTest()
         {
-            _calc = new Calculadora(3);
+            _mockCalc = new Mock<ICalculadora>();
+            //_mockCalc.Setup(m => m.Somar(2, 2)).Returns(4);
+            //_mockCalc.Setup(m => m.Somar(It.IsAny<int>(), -1)).Throws<ArgumentOutOfRangeException>();
+            _mockCalc.Setup(m => m.Dividir(It.IsAny<int>(), 0)).Throws<DivideByZeroException>();
+            _mockCalc.Setup(m => m.Dividir(6, 6)).Returns(1);
+            _calc = _mockCalc.Object;
         }
 
         public void Dispose()

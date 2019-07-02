@@ -2,7 +2,7 @@
 
 namespace Estudo.Tdd.Calculadora
 {
-    public class Calculadora
+    public class Calculadora : ICalculadora
     {
         private int _limiteMinimo { get; set; }
 
