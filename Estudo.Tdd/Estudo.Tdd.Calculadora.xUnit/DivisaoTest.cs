@@ -20,15 +20,16 @@ namespace Estudo.Tdd.Calculadora.xUnit
         [Fact]
         public void TestDividir()
         {
-            Assert.Equal(2, _calc.Dividir(4, 2));
+            Assert.Equal(1, _calc.Dividir(6, 6));
         }
 
         [Fact]
         public void TestDivisaoPorZero()
         {
+            var calc = new Calculadora();
             Assert.Throws<DivideByZeroException>(() =>
             {
-                Assert.Equal(0, _calc.Dividir(2, 0));
+                calc.Dividir(6, 0);
             });
         }
     }
